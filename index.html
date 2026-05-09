@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Hassan — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">AH<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for work
+      </div>
+      <h1 class="hero-title">
+        Ahmed<br />
+        <span class="hero-title-outline">Hassan</span><br />
+        Mahmoud
+      </h1>
+      <p class="hero-role">Full-Stack Web Developer</p>
+      <p class="hero-desc">
+        I build end-to-end web applications with React, Node.js, Express &amp; MongoDB — from pixel-perfect UIs to scalable REST APIs.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stack">
+        <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">ahmed.js</span>
+        </div>
+        <pre class="code-body"><span class="c-kw">const</span> <span class="c-var">ahmed</span> = {
+  <span class="c-key">role</span>: <span class="c-str">"Full-Stack Dev"</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>,
+    <span class="c-str">"Express"</span>, <span class="c-str">"MongoDB"</span>
+  ],
+  <span class="c-key">location</span>: <span class="c-str">"Egypt 🇪🇬"</span>,
+  <span class="c-key">available</span>: <span class="c-bool">true</span>,
+  <span class="c-key">coffee</span>: <span class="c-str">"always ☕"</span>
+};</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Crafting digital products <em>end to end</em></h2>
+          <p>I'm a Full-Stack Web Developer specialising in the MERN stack — React on the frontend, Node.js + Express on the backend, and MongoDB as the database. I care about clean architecture, maintainable code, and smooth user experiences.</p>
+          <p>Whether it's a real-time chat app, a multi-module ERP dashboard, or a polished landing page — I build it properly, from database schema to deployed UI.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">MERN</span>
+              <span class="stat-label">Core Stack</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">EG</span>
+              <span class="stat-label">Based In Egypt</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrap">
+          <div class="about-image-placeholder">
+            <div class="about-initials">AH</div>
+          </div>
+          <div class="about-card floating">
+            <span class="about-card-icon">⚡</span>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>Clean code, on time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-sub">A few things I've built recently.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card featured" data-index="01">
+          <div class="project-screenshots">
+            <div class="ehm-preview">
+              <div class="ehm-sidebar">
+                <div class="ehm-logo-sm">Egypt Holiday Makers</div>
+                <div class="ehm-nav-item active">🏠 Home</div>
+                <div class="ehm-nav-item">📋 Reservations</div>
+                <div class="ehm-nav-item">✈️ Airport Transfers</div>
+                <div class="ehm-nav-item">🪪 Visas</div>
+                <div class="ehm-nav-item">🎈 Balloons</div>
+                <div class="ehm-nav-item">🕌 Hajj & Umrah</div>
+                <div class="ehm-nav-item">💰 Accounting</div>
+              </div>
+              <div class="ehm-main">
+                <div class="ehm-title">Welcome to Egypt Holiday Makers</div>
+                <div class="ehm-cards-grid">
+                  <div class="ehm-card purple">📋 Reservations</div>
+                  <div class="ehm-card orange">✈️ Booking</div>
+                  <div class="ehm-card teal">🕌 Religious</div>
+                  <div class="ehm-card green">💰 Accounting</div>
+                  <div class="ehm-card pink">🚐 Transportation</div>
+                  <div class="ehm-card dark">👥 HRM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">01</div>
+            <h3 class="project-title">Egypt Holiday Makers</h3>
+            <p class="project-desc">A full-stack travel management ERP. Handles reservations, airport transfers, Hajj &amp; Umrah packages, visa tracking, supplier management, and full accounting — all in one dashboard. Multi-module CRUD with relational data.</p>
+            <div class="project-tags">
+              <span>React JS</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-project">View Project →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-index="02">
+          <div class="project-screenshots">
+            <div class="chatup-preview">
+              <div class="chatup-brand">CHATUP</div>
+              <div class="chat-window">
+                <div class="chat-header">
+                  <div class="chat-avatar">K</div>
+                  <div class="chat-user-info">
+                    <strong>kali kali</strong>
+                    <small>Active now</small>
+                  </div>
+                </div>
+                <div class="chat-messages">
+                  <div class="msg sent">yooooooo</div>
+                  <div class="msg-row">
+                    <div class="msg-avatar-sm">K</div>
+                    <div class="msg received">hahahahha</div>
+                  </div>
+                  <div class="msg-row">
+                    <div class="msg-avatar-sm">K</div>
+                    <div class="msg received">lol</div>
+                  </div>
+                </div>
+                <div class="chat-input-row">
+                  <span class="chat-placeholder">Type a message here...</span>
+                  <button class="chat-send">➤</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">02</div>
+            <h3 class="project-title">ChatUP</h3>
+            <p class="project-desc">Real-time chat web app inspired by WhatsApp. Scalable Node.js + Express backend with MongoDB, handling user auth, user management, and live message exchange with clean cross-device UI.</p>
+            <div class="project-tags">
+              <span>React JS</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-meta">May 2024</div>
+            <div class="project-links">
+              <a href="#" class="btn-project">View Project →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-index="03">
+          <div class="project-screenshots">
+            <div class="sn-preview">
+              <div class="sn-top-bar">
+                <span class="sn-logo-dot">●</span>
+                <span class="sn-logo-text">ServeNow</span>
+                <div class="sn-nav-links"><span>Features</span><span>Reviews</span></div>
+                <button class="sn-cta-btn">Get the App</button>
+              </div>
+              <div class="sn-hero-area">
+                <div class="sn-hero-text">
+                  <p>Your City's Services,</p>
+                  <p class="sn-accent">One Tap Away</p>
+                  <div class="sn-stats-row">
+                    <span><strong>50K+</strong> Customers</span>
+                    <span><strong>4.9★</strong> Rating</span>
+                  </div>
+                </div>
+                <div class="sn-phone-mock">
+                  <div class="sn-phone-screen">
+                    <p class="sn-phone-q">What do you need today?</p>
+                    <div class="sn-service-row">🔧 Home Maintenance</div>
+                    <div class="sn-service-row">🧹 Deep Cleaning</div>
+                    <div class="sn-service-row">📦 Shipping &amp; Moving</div>
+                    <button class="sn-book-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">03</div>
+            <h3 class="project-title">ServeNow</h3>
+            <p class="project-desc">Modern responsive landing page for an on-demand home services platform. Smooth animations, mobile-first navigation, testimonials, dark/light sections, and a clear conversion-focused layout.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-project">View Project →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">Tech</div>
+      <h2 class="section-title">Skills &amp; Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>⚛️</span> React JS</div>
+            <div class="skill-item"><span>🅰️</span> Angular</div>
+            <div class="skill-item"><span>🌐</span> HTML5</div>
+            <div class="skill-item"><span>🎨</span> CSS3</div>
+            <div class="skill-item"><span>📜</span> JavaScript</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>🟢</span> Node.js</div>
+            <div class="skill-item"><span>🚂</span> Express.js</div>
+            <div class="skill-item"><span>🔌</span> REST APIs</div>
+            <div class="skill-item"><span>🔐</span> Auth / JWT</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Database &amp; Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span>🍃</span> MongoDB</div>
+            <div class="skill-item"><span>🗄️</span> Mongoose</div>
+            <div class="skill-item"><span>🐙</span> Git / GitHub</div>
+            <div class="skill-item"><span>🔄</span> CRUD &amp; MVC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's Build Something<br /><em>Together</em></h2>
+        <p class="section-sub">I'm open to full-time roles, freelance projects, and collaborations.</p>
+        <div class="contact-options">
+          <a href="mailto:ahmed@example.com" class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <div class="contact-card-text">
+              <strong>Email</strong>
+              <span>kingahmed52340@gmail.com</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://github.com/A7med7assan523" target="_blank" class="contact-card">
+            <span class="contact-icon">🐙</span>
+            <div class="contact-card-text">
+              <strong>GitHub</strong>
+              <span>github.com/A7med7assan523</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="www.linkedin.com/in/ahmed-hassan-mahmoud-708090310
+
+" target="_blank" class="contact-card">
+            <span class="contact-icon">💼</span>
+            <div class="contact-card-text">
+              <strong>LinkedIn</strong>
+              <span>Ahmed Hassan</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Ahmed Hassan Mahmoud</span>
+      <span>Built with HTML · CSS · JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
